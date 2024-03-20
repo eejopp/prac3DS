@@ -1,0 +1,23 @@
+﻿<Window x:Class="prac2DS.wndBooking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:prac2DS"
+        mc:Ignorable="d"
+        Title="wndBooking" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dgBooking" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Name" Binding="{Binding ClientsName}"/>
+                <DataGridTextColumn Header="SurName" Binding="{Binding ClientsSurname}"/>
+                <DataGridTextColumn Header="Address" Binding="{Binding ClientsAddress}"/>
+                <DataGridTextColumn Header="PhoneNumber}" Binding="{Binding PhoneNumber}"/>
+                <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
+                <DataGridTextColumn Header="ServiceName" Binding="{Binding ServiceName}"/>
+                <DataGridTextColumn Header="Cost" Binding="{Binding Cost}"/>
+                <DataGridTextColumn Header="Duration" Binding="{Binding Duration}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
